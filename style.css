@@ -1,0 +1,277 @@
+/* .container {
+  width: 600px;
+  height: 650px;
+  position: relative;
+  border: 10px solid green;
+} */
+
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+/* Navbar */
+/* nav {
+ 
+  background-color: aqua;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+nav a {
+  text-decoration: none;
+  float: inline-start;
+} */
+/* .co {
+  width: 800px;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.satu {
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background-image: url(img/gambar1.jpg);
+  background-size: cover;
+}
+.dua {
+  height: 200px;
+  width: 200px;
+  background-color: salmon;
+  margin-bottom: 1rem;
+  border-radius: 50% 0 50% 0;
+}
+.tiga {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin-bottom: 1rem;
+  border-radius: 0 50% 0 50%;
+} */
+
+/* nav */
+/* body {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: block;
+  background-color: #f468bc;
+  position: relative;
+}
+.nav h3 {
+  display: inline;
+  text-align: center;
+}
+.nav ul {
+  float: right;
+  padding-right: 1rem;
+}
+.nav li {
+  display: inline-block;
+  text-decoration: none;
+}
+a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+} */
+/* end nav */
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.ncontainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  height: 100vh;
+  background-color: lightslategray;
+  background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+.bungkus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 100%;
+  height: 80px;
+  /* background-color: rgb(45, 41, 41);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5); */
+}
+.brand {
+  display: flex;
+  /* nilai default dari flex adalah cloum yaitu tulisan akan kebawah, row tulisan akan sejajar 
+  atauu item akan ke semping sejaar */
+  flex-direction: row;
+  font-size: 2em;
+  padding: 15px;
+  text-transform: capitalize;
+}
+.brand img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+.brand img:hover {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  padding-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.awal {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.akhir {
+  color: tomato;
+  padding-left: 4px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.navigation li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.navigation > li > a:hover {
+  color: tomato;
+  transition: all 0.4s ease-in-out;
+}
+
+.aktif {
+  background-color: tomato;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.aktif:hover {
+  color: white !important;
+}
+/* //////////////////////////////////////////////// */
+.tombol .action_btn a {
+  text-decoration: none;
+}
+.bungkus .tombol_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.tombol .action_btn {
+  background-color: tomato;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.tombol:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.tombol:active {
+  scale: 0.95;
+}
+
+/* deropdown menu */
+.ddwm {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ddwm.open {
+  height: 240px;
+}
+
+.ddwm li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ddwm .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* responsif desain */
+@media (max-width: 992px) {
+  .bungkus .navigation,
+  .bungkus .action_btn {
+    display: none;
+  }
+
+  .bungkus .tombol_btn {
+    display: block;
+  }
+
+  .ddwm {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .ddwm {
+    left: 2rem;
+    width: unset;
+  }
+}
