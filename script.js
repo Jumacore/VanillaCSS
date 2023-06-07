@@ -15,6 +15,24 @@ tombolbtn.addEventListener("click", function () {
   tombolbtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 });
 
+// annimasi
+const ses = document.querySelector(".ses");
+ses.addEventListener("mouseover", function () {
+  let satu = "tt";
+
+  setTimeout(() => {
+    this.classList.toggle(satu);
+  }, 500);
+});
+
+ses.addEventListener("mouseout", function () {
+  let dua = "tt";
+  setTimeout(() => {
+    this.classList.toggle(dua);
+  }, 500);
+});
+
+//game
 function main() {
   let t = true;
   while (t) {
